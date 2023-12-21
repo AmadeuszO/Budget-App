@@ -1,5 +1,30 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /*    Uzupełnić fonty */
+}
+body{
+    background-color: #7d7a7a;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conteiner{
+    width: 90%;
+    font-size: 1em;
+    /*margin: 1em;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conteiner__row{
+    width: 100%;
+}
+.conteiner__sub{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
