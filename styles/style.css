@@ -14,7 +14,7 @@ body {
 }
 .conteiner__wrapper {
     width: 90%;
-    font-size: 16px;
+    font-size: 1em;
     max-width: 43.75em;
     margin: 1em auto;
 }
@@ -70,7 +70,7 @@ body {
     margin: 2em 0;
     padding: 1.2em;
 }
-.conteiner__output p {
+.conteiner__output__page {
     font-weight: 500;
     margin-bottom: 0.6em;
 }

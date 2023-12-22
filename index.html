@@ -10,10 +10,11 @@
     <title>Budget App</title>
 </head>
 <body>
+<!--Conteiner-->
 <div class="conteiner__wrapper">
     <div class="container__row">
         <div class="content">
-            <!-- Budget -->
+            <!-- Budget Content -->
             <div class="content__conteiner">
                 <h3 class="content__title">Budget</h3>
                 <p class="hide error" id="budget-error">
@@ -27,7 +28,7 @@
                 />
                 <button class="content__submit" id="total-amount-button">Set Budget</button>
             </div>
-            <!-- Expenditure -->
+            <!-- User -->
             <div class="user__conteiner">
                 <h3 class="content__title">Expenses</h3>
                 <p class="hide error" id="product-title-error">
@@ -50,15 +51,15 @@
         <!-- Output -->
         <div class="conteiner__output flex__space">
             <div>
-                <p>Total Budget</p>
+                <p class="conteiner__output__page">Total Budget</p>
                 <span id="amount">0</span>
             </div>
             <div>
-                <p>Expenses</p>
+                <p class="conteiner__output__page">Expenses</p>
                 <span id="expenditure-value">0</span>
             </div>
             <div>
-                <p>Balance</p>
+                <p class="conteiner__output__page">Balance</p>
                 <span id="balance-amount">0</span>
             </div>
         </div>
