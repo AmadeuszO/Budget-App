@@ -10,43 +10,66 @@
     <title>Budget App</title>
 </head>
 <body>
-<!--Conteiner-->
-<div class="conteiner">
-    <div class="conteiner__row">
-        <div class="conteiner__sub">
-            <!---->
-            <div class="conteiner__amount">
-                <h3 class="conteiner__amount__title">Budget</h3>
-                <p class="hide error" id="budget-error">Value cannot be empty or negative</p>
-                <input type="number" id="total" placeholder="Enter Total Amount"/>
-                <button class="conteiner__amount__sumbit" id="total-button">Set</button>
+<div class="conteiner__wrapper">
+    <div class="container__row">
+        <div class="content">
+            <!-- Budget -->
+            <div class="content__conteiner">
+                <h3 class="content__title">Budget</h3>
+                <p class="hide error" id="budget-error">
+                    Value cannot be empty or negative
+                </p>
+                <input
+                        class="content__input"
+                        type="number"
+                        id="total-amount"
+                        placeholder="Enter Total Amount"
+                />
+                <button class="content__submit" id="total-amount-button">Set Budget</button>
             </div>
-            <!---->
-            <div class="conteiner__user">
-                <h3>Lorem</h3>
+            <!-- Expenditure -->
+            <div class="user__conteiner">
+                <h3 class="content__title">Expenses</h3>
                 <p class="hide error" id="product-title-error">
-                    Lorem ipsum dolor sit amet,
+                    Values cannot be empty
                 </p>
                 <input
                         type="text"
-                        class='conteiner__title'
+                        class="user__product__title"
                         id="product-title"
-                        placeholder="Enter title of product"
+                        placeholder="Enter Title of Product"
                 />
                 <input
                         type="number"
-                        id="user-number"
+                        id="user-amount"
                         placeholder="Enter Cost of Product"
                 />
-                <button class="conteiner__user__submit" id="check-amount">Check Amount</button>
+                <button class="content__submit" id="check-amount">Check Amount</button>
             </div>
         </div>
-        <!---->
-
+        <!-- Output -->
+        <div class="conteiner__output flex__space">
+            <div>
+                <p>Total Budget</p>
+                <span id="amount">0</span>
+            </div>
+            <div>
+                <p>Expenses</p>
+                <span id="expenditure-value">0</span>
+            </div>
+            <div>
+                <p>Balance</p>
+                <span id="balance-amount">0</span>
+            </div>
+        </div>
     </div>
-    <!---->
+    <!-- List -->
+    <div class="container__list">
+        <h3 class="content__title">Expense List</h3>
+        <div class="content__list" id="list"></div>
+    </div>
 </div>
-<!--Js Script-->
-<script src="main/app.js"></script>
+<!-- Script -->
+<script src="script.js"></script>
 </body>
 </html>
