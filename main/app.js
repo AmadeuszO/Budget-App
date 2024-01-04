@@ -1,1 +1,13 @@
-alert('Hello')
+let totalAmount = document.querySelector("#total-amount");
+let userAmount = document.querySelector("#user-amount");
+const checkAmountButton = document.querySelector("#check-amount");
+const totalAmountButton = document.querySelector("#total-amount-button");
+const productTitle = document.querySelector("#product-title");
+const errorMessage = document.querySelector("#budget-error");
+const productTitleError = document.querySelector("#product-title-error");
+const productCostError = document.querySelector("#product-cost-error");
+const amount = document.querySelector("#amount");
+const expenditureValue = document.querySelector("#expenditure-value");
+const balanceValue = document.querySelector("#balance-amount");
+const list = document.querySelector("#list");
+let tempAmount = 0;
